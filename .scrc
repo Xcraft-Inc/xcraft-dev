@@ -13,6 +13,7 @@
     "./xcraft-core-eventstore/",
     "./xcraft-core-fs/",
     "./xcraft-core-ftp/",
+    "./xcraft-core-goblin/",
     "./xcraft-core-http/",
     "./xcraft-core-log/",
     "./xcraft-core-placeholder/",
