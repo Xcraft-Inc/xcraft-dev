@@ -1,0 +1,39 @@
+{
+  "npmInstallArgs": [],
+  "modules": [
+    "./xcraft-contrib-glrunner/",
+    "./xcraft-core-activity/",
+    "./xcraft-core-bin/",
+    "./xcraft-core-bus/",
+    "./xcraft-core-busclient/",
+    "./xcraft-core-buslog/",
+    "./xcraft-core-daemon/",
+    "./xcraft-core-devel/",
+    "./xcraft-core-env/",
+    "./xcraft-core-etc/",
+    "./xcraft-core-eventstore/",
+    "./xcraft-core-fs/",
+    "./xcraft-core-ftp/",
+    "./xcraft-core-http/",
+    "./xcraft-core-log/",
+    "./xcraft-core-placeholder/",
+    "./xcraft-core-platform/",
+    "./xcraft-core-process/",
+    "./xcraft-core-scm/",
+    "./xcraft-core-server/",
+    "./xcraft-core-subst/",
+    "./xcraft-core-uri/",
+    "./xcraft-core-utils/",
+    "./xcraft-core-wizard/"
+  ],
+  "scripts": {
+    "presc": {
+      "postinstall" : [
+        "git submodule update --init --recursive",
+        "git submodule foreach --recursive git checkout master",
+        "git submodule foreach --recursive git pull"
+      ]
+    },
+    "postsc": {}
+  }
+}

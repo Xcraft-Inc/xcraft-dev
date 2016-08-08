@@ -1,0 +1,27 @@
+{
+  "name": "xcraft-devel",
+  "version": "0.1.0",
+  "description": "Developper package\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[C\u001b[C\u001b[C\u001b[C",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xcraft-Inc/xcraft-devel.git"
+  },
+  "keywords": [
+    "xcraft",
+    "dev",
+    "devel"
+  ],
+  "author": "Samuel Loup",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Xcraft-Inc/xcraft-devel/issues"
+  },
+  "homepage": "https://github.com/Xcraft-Inc/xcraft-devel#readme",
+  "devDependencies": {
+    "startcraft": "^0.4.1"
+  }
+}
