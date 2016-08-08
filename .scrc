@@ -1,7 +1,6 @@
 {
   "npmInstallArgs": [],
   "modules": [
-    "./xcraft-contrib-glrunner/",
     "./xcraft-core-activity/",
     "./xcraft-core-bin/",
     "./xcraft-core-bus/",
