@@ -70,6 +70,3 @@
 [submodule "xcraft-core-etc"]
 	path = xcraft-core-etc
 	url = https://github.com/Xcraft-Inc/xcraft-core-etc.git
-[submodule "xcraft-contrib-glrunner"]
-	path = xcraft-contrib-glrunner
-	url = https://github.com/Xcraft-Inc/xcraft-contrib-glrunner.git
