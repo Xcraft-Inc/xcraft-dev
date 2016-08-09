@@ -1,7 +1,7 @@
 {
   "name": "xcraft-devel",
   "version": "0.1.0",
-  "description": "Developper package\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[C\u001b[C\u001b[C\u001b[C",
+  "description": "Developer Xcraft module",
   "main": "index.js",
   "scripts": {
     "postinstall": "startcraft",
