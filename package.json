@@ -24,6 +24,6 @@
   },
   "homepage": "https://github.com/Xcraft-Inc/xcraft-devel#readme",
   "devDependencies": {
-    "startcraft": "^0.5.0"
+    "startcraft": "^0.5.2"
   }
 }
