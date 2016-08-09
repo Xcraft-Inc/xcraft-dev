@@ -1,0 +1,4 @@
+{
+  "enable": false,
+  "dbfile": "./var/xcraft-core-eventstore/events.nedb"
+}
