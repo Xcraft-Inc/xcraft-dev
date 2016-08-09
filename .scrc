@@ -24,7 +24,8 @@
     "./xcraft-core-subst/",
     "./xcraft-core-uri/",
     "./xcraft-core-utils/",
-    "./xcraft-core-wizard/"
+    "./xcraft-core-wizard/",
+    "./xcraft-server"
   ],
   "scripts": {
     "presc": {

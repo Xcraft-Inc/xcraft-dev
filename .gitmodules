@@ -73,3 +73,6 @@
 [submodule "xcraft-core-goblin"]
 	path = xcraft-core-goblin
 	url = https://github.com/Xcraft-Inc/xcraft-core-goblin.git
+[submodule "xcraft-server"]
+	path = xcraft-server
+	url = https://github.com/Xcraft-Inc/xcraft-server.git
