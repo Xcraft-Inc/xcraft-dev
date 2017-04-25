@@ -82,3 +82,9 @@
 [submodule "xcraft-zog"]
 	path = xcraft-zog
 	url = https://github.com/Xcraft-Inc/xcraft-zog.git
+[submodule "xcraft-dev-rules"]
+	path = xcraft-dev-rules
+	url = https://github.com/Xcraft-Inc/xcraft-dev-rules.git
+[submodule "xcraft-core-host"]
+	path = xcraft-core-host
+	url = https://github.com/Xcraft-Inc/xcraft-core-host.git

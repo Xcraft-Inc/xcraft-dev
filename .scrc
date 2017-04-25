@@ -14,6 +14,7 @@
     "./xcraft-core-fs/",
     "./xcraft-core-ftp/",
     "./xcraft-core-goblin/",
+    "./xcraft-core-host/",
     "./xcraft-core-http/",
     "./xcraft-core-log/",
     "./xcraft-core-placeholder/",
@@ -25,6 +26,7 @@
     "./xcraft-core-uri/",
     "./xcraft-core-utils/",
     "./xcraft-core-wizard/",
+    "./xcraft-dev-rules/",
     "./xcraft-materials/",
     "./xcraft-server",
     "./xcraft-zog/"
