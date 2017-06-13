@@ -91,3 +91,6 @@
 [submodule "shellcraft"]
 	path = shellcraft
 	url = https://github.com/Xcraft-Inc/shellcraft.js.git
+[submodule "xcraft-core-transport"]
+	path = xcraft-core-transport
+	url = https://github.com/Xcraft-Inc/xcraft-core-transport.git
