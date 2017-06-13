@@ -1,6 +1,7 @@
 {
   "npmInstallArgs": [],
   "modules": [
+    "./shellcraft/",
     "./xcraft-core-activity/",
     "./xcraft-core-bin/",
     "./xcraft-core-bus/",
@@ -11,6 +12,7 @@
     "./xcraft-core-env/",
     "./xcraft-core-etc/",
     "./xcraft-core-eventstore/",
+    "./xcraft-core-extract/",
     "./xcraft-core-fs/",
     "./xcraft-core-ftp/",
     "./xcraft-core-goblin/",
@@ -23,6 +25,7 @@
     "./xcraft-core-scm/",
     "./xcraft-core-server/",
     "./xcraft-core-subst/",
+    "./xcraft-core-transport/",
     "./xcraft-core-uri/",
     "./xcraft-core-utils/",
     "./xcraft-core-wizard/",
