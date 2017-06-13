@@ -24,6 +24,7 @@
     "./xcraft-core-process/",
     "./xcraft-core-scm/",
     "./xcraft-core-server/",
+    "./xcraft-core-shredder/",
     "./xcraft-core-subst/",
     "./xcraft-core-transport/",
     "./xcraft-core-uri/",
