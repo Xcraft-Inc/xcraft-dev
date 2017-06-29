@@ -97,3 +97,6 @@
 [submodule "xcraft-core-shredder"]
 	path = xcraft-core-shredder
 	url = https://github.com/Xcraft-Inc/xcraft-core-shredder.git
+[submodule "startcraft"]
+	path = startcraft
+	url = https://github.com/Xcraft-Inc/startcraft.git
