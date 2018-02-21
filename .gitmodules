@@ -1,9 +1,6 @@
 [submodule "xcraft-core-fs"]
 	path = xcraft-core-fs
 	url = https://github.com/Xcraft-Inc/xcraft-core-fs.git
-[submodule "xcraft-core-http"]
-	path = xcraft-core-http
-	url = https://github.com/Xcraft-Inc/xcraft-core-http.git
 [submodule "xcraft-core-ftp"]
 	path = xcraft-core-ftp
 	url = https://github.com/Xcraft-Inc/xcraft-core-ftp.git
@@ -100,3 +97,24 @@
 [submodule "startcraft"]
 	path = startcraft
 	url = https://github.com/Xcraft-Inc/startcraft.git
+[submodule "xcraft-core-http"]
+	path = xcraft-core-http
+	url = https://github.com/Xcraft-Inc/xcraft-core-http.git
+[submodule "xcraft-contrib-peon"]
+	path = xcraft-contrib-peon
+	url = https://github.com/Xcraft-Inc/xcraft-contrib-peon.git
+[submodule "xcraft-contrib-pacman"]
+	path = xcraft-contrib-pacman
+	url = https://github.com/Xcraft-Inc/xcraft-contrib-pacman.git
+[submodule "xcraft-contrib-wpkg"]
+	path = xcraft-contrib-wpkg
+	url = https://github.com/Xcraft-Inc/xcraft-contrib-wpkg.git
+[submodule "xcraft-contrib-bootwpkg"]
+	path = xcraft-contrib-bootwpkg
+	url = https://github.com/Xcraft-Inc/xcraft-contrib-bootwpkg.git
+[submodule "xcraft-contrib-bootcmake"]
+	path = xcraft-contrib-bootcmake
+	url = https://github.com/Xcraft-Inc/xcraft-contrib-bootcmake.git
+[submodule "xcraft-core-horde"]
+	path = xcraft-core-horde
+	url = https://github.com/Xcraft-Inc/xcraft-core-horde.git
