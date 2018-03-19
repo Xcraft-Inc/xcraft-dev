@@ -2,6 +2,7 @@
   "npmInstallArgs": [],
   "modules": [
     "./shellcraft/",
+    "./xcraft-axon/",
     "./xcraft-contrib-bootcmake/",
     "./xcraft-contrib-bootwpkg/",
     "./xcraft-contrib-pacman/",

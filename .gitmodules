@@ -119,5 +119,5 @@
 	path = xcraft-core-horde
 	url = https://github.com/Xcraft-Inc/xcraft-core-horde.git
 [submodule "axon"]
-	path = axon
+	path = xcraft-axon
 	url = https://github.com/Xcraft-Inc/axon.git
