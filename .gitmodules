@@ -121,3 +121,6 @@
 [submodule "axon"]
 	path = xcraft-axon
 	url = https://github.com/Xcraft-Inc/axon.git
+[submodule "gigawatt"]
+	path = gigawatts
+	url = https://github.com/Xcraft-Inc/gigawatt.git
