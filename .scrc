@@ -37,6 +37,7 @@
     "./xcraft-core-uri/",
     "./xcraft-core-utils/",
     "./xcraft-core-wizard/",
+    "./xcraft-dev-prettier/",
     "./xcraft-dev-rules/",
     "./xcraft-materials/",
     "./xcraft-server",
