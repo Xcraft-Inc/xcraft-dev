@@ -1,126 +1,129 @@
 [submodule "xcraft-core-fs"]
 	path = xcraft-core-fs
-	url = https://github.com/Xcraft-Inc/xcraft-core-fs.git
+	url = ../xcraft-core-fs.git
 [submodule "xcraft-core-ftp"]
 	path = xcraft-core-ftp
-	url = https://github.com/Xcraft-Inc/xcraft-core-ftp.git
+	url = ../xcraft-core-ftp.git
 [submodule "xcraft-core-placeholder"]
 	path = xcraft-core-placeholder
-	url = https://github.com/Xcraft-Inc/xcraft-core-placeholder.git
+	url = ../xcraft-core-placeholder.git
 [submodule "xcraft-core-platform"]
 	path = xcraft-core-platform
-	url = https://github.com/Xcraft-Inc/xcraft-core-platform.git
+	url = ../xcraft-core-platform.git
 [submodule "xcraft-core-uri"]
 	path = xcraft-core-uri
-	url = https://github.com/Xcraft-Inc/xcraft-core-uri.git
+	url = ../xcraft-core-uri.git
 [submodule "xcraft-core-log"]
 	path = xcraft-core-log
-	url = https://github.com/Xcraft-Inc/xcraft-core-log.git
+	url = ../xcraft-core-log.git
 [submodule "xcraft-core-env"]
 	path = xcraft-core-env
-	url = https://github.com/Xcraft-Inc/xcraft-core-env.git
+	url = ../xcraft-core-env.git
 [submodule "xcraft-core-process"]
 	path = xcraft-core-process
-	url = https://github.com/Xcraft-Inc/xcraft-core-process.git
+	url = ../xcraft-core-process.git
 [submodule "xcraft-core-utils"]
 	path = xcraft-core-utils
-	url = https://github.com/Xcraft-Inc/xcraft-core-utils.git
+	url = ../xcraft-core-utils.git
 [submodule "xcraft-core-wizard"]
 	path = xcraft-core-wizard
-	url = https://github.com/Xcraft-Inc/xcraft-core-wizard.git
+	url = ../xcraft-core-wizard.git
 [submodule "xcraft-core-scm"]
 	path = xcraft-core-scm
-	url = https://github.com/Xcraft-Inc/xcraft-core-scm.git
+	url = ../xcraft-core-scm.git
 [submodule "xcraft-core-subst"]
 	path = xcraft-core-subst
-	url = https://github.com/Xcraft-Inc/xcraft-core-subst.git
+	url = ../xcraft-core-subst.git
 [submodule "xcraft-core-server"]
 	path = xcraft-core-server
-	url = https://github.com/Xcraft-Inc/xcraft-core-server.git
+	url = ../xcraft-core-server.git
 [submodule "xcraft-core-daemon"]
 	path = xcraft-core-daemon
-	url = https://github.com/Xcraft-Inc/xcraft-core-daemon.git
+	url = ../xcraft-core-daemon.git
 [submodule "xcraft-core-devel"]
 	path = xcraft-core-devel
-	url = https://github.com/Xcraft-Inc/xcraft-core-devel.git
+	url = ../xcraft-core-devel.git
 [submodule "xcraft-core-buslog"]
 	path = xcraft-core-buslog
-	url = https://github.com/Xcraft-Inc/xcraft-core-buslog.git
+	url = ../xcraft-core-buslog.git
 [submodule "xcraft-core-busclient"]
 	path = xcraft-core-busclient
-	url = https://github.com/Xcraft-Inc/xcraft-core-busclient.git
+	url = ../xcraft-core-busclient.git
 [submodule "xcraft-core-bin"]
 	path = xcraft-core-bin
-	url = https://github.com/Xcraft-Inc/xcraft-core-bin.git
+	url = ../xcraft-core-bin.git
 [submodule "xcraft-core-bus"]
 	path = xcraft-core-bus
-	url = https://github.com/Xcraft-Inc/xcraft-core-bus.git
+	url = ../xcraft-core-bus.git
 [submodule "xcraft-core-activity"]
 	path = xcraft-core-activity
-	url = https://github.com/Xcraft-Inc/xcraft-core-activity.git
+	url = ../xcraft-core-activity.git
 [submodule "xcraft-core-extract"]
 	path = xcraft-core-extract
-	url = https://github.com/Xcraft-Inc/xcraft-core-extract.git
+	url = ../xcraft-core-extract.git
 [submodule "xcraft-core-eventstore"]
 	path = xcraft-core-eventstore
-	url = https://github.com/Xcraft-Inc/xcraft-core-eventstore.git
+	url = ../xcraft-core-eventstore.git
 [submodule "xcraft-core-etc"]
 	path = xcraft-core-etc
-	url = https://github.com/Xcraft-Inc/xcraft-core-etc.git
+	url = ../xcraft-core-etc.git
 [submodule "xcraft-core-goblin"]
 	path = xcraft-core-goblin
-	url = https://github.com/Xcraft-Inc/xcraft-core-goblin.git
+	url = ../xcraft-core-goblin.git
 [submodule "xcraft-server"]
 	path = xcraft-server
-	url = https://github.com/Xcraft-Inc/xcraft-server.git
+	url = ../xcraft-server.git
 [submodule "xcraft-materials"]
 	path = xcraft-materials
-	url = https://github.com/Xcraft-Inc/xcraft-materials.git
+	url = ../xcraft-materials.git
 [submodule "xcraft-zog"]
 	path = xcraft-zog
-	url = https://github.com/Xcraft-Inc/xcraft-zog.git
+	url = ../xcraft-zog.git
 [submodule "xcraft-dev-rules"]
 	path = xcraft-dev-rules
-	url = https://github.com/Xcraft-Inc/xcraft-dev-rules.git
+	url = ../xcraft-dev-rules.git
 [submodule "xcraft-core-host"]
 	path = xcraft-core-host
-	url = https://github.com/Xcraft-Inc/xcraft-core-host.git
+	url = ../xcraft-core-host.git
 [submodule "shellcraft"]
 	path = shellcraft
-	url = https://github.com/Xcraft-Inc/shellcraft.js.git
+	url = ../shellcraft.js.git
 [submodule "xcraft-core-transport"]
 	path = xcraft-core-transport
-	url = https://github.com/Xcraft-Inc/xcraft-core-transport.git
+	url = ../xcraft-core-transport.git
 [submodule "xcraft-core-shredder"]
 	path = xcraft-core-shredder
-	url = https://github.com/Xcraft-Inc/xcraft-core-shredder.git
+	url = ../xcraft-core-shredder.git
 [submodule "startcraft"]
 	path = startcraft
-	url = https://github.com/Xcraft-Inc/startcraft.git
+	url = ../startcraft.git
 [submodule "xcraft-core-http"]
 	path = xcraft-core-http
-	url = https://github.com/Xcraft-Inc/xcraft-core-http.git
+	url = ../xcraft-core-http.git
 [submodule "xcraft-contrib-peon"]
 	path = xcraft-contrib-peon
-	url = https://github.com/Xcraft-Inc/xcraft-contrib-peon.git
+	url = ../xcraft-contrib-peon.git
 [submodule "xcraft-contrib-pacman"]
 	path = xcraft-contrib-pacman
-	url = https://github.com/Xcraft-Inc/xcraft-contrib-pacman.git
+	url = ../xcraft-contrib-pacman.git
 [submodule "xcraft-contrib-wpkg"]
 	path = xcraft-contrib-wpkg
-	url = https://github.com/Xcraft-Inc/xcraft-contrib-wpkg.git
+	url = ../xcraft-contrib-wpkg.git
 [submodule "xcraft-contrib-bootwpkg"]
 	path = xcraft-contrib-bootwpkg
-	url = https://github.com/Xcraft-Inc/xcraft-contrib-bootwpkg.git
+	url = ../xcraft-contrib-bootwpkg.git
 [submodule "xcraft-contrib-bootcmake"]
 	path = xcraft-contrib-bootcmake
-	url = https://github.com/Xcraft-Inc/xcraft-contrib-bootcmake.git
+	url = ../xcraft-contrib-bootcmake.git
 [submodule "xcraft-core-horde"]
 	path = xcraft-core-horde
-	url = https://github.com/Xcraft-Inc/xcraft-core-horde.git
+	url = ../xcraft-core-horde.git
 [submodule "axon"]
 	path = xcraft-axon
-	url = https://github.com/Xcraft-Inc/axon.git
+	url = ../axon.git
 [submodule "gigawatt"]
 	path = gigawatts
-	url = https://github.com/Xcraft-Inc/gigawatts.git
+	url = ../gigawatts.git
+[submodule "xcraft-dev-prettier"]
+	path = xcraft-dev-prettier
+	url = ../xcraft-dev-prettier
