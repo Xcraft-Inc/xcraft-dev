@@ -1,5 +1,5 @@
 {
-  "name": "xcraft-devel",
+  "name": "xcraft-dev",
   "version": "0.1.0",
   "description": "Developer Xcraft module",
   "main": "index.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Xcraft-Inc/xcraft-devel.git"
+    "url": "git+https://github.com/Xcraft-Inc/xcraft-dev.git"
   },
   "keywords": [
     "xcraft",
@@ -21,10 +21,7 @@
   "author": "Samuel Loup",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Xcraft-Inc/xcraft-devel/issues"
+    "url": "https://github.com/Xcraft-Inc/xcraft-dev/issues"
   },
-  "homepage": "https://github.com/Xcraft-Inc/xcraft-devel#readme",
-  "devDependencies": {
-    "startcraft": "^2.1.0"
-  }
+  "homepage": "https://github.com/Xcraft-Inc/xcraft-dev#readme"
 }
