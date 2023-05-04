@@ -205,3 +205,6 @@
 [submodule "goblin-etl"]
 	path = goblin-etl
 	url = ../goblin-etl
+[submodule "xcraft-core-stones"]
+	path = xcraft-core-stones
+	url = ../xcraft-core-stones
