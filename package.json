@@ -2,12 +2,8 @@
   "name": "xcraft-dev",
   "version": "0.1.0",
   "description": "Developer Xcraft module",
-  "main": "index.js",
   "scripts": {
-    "postinstall": "startcraft",
-    "server": "xcraft-server",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "postshrinkwrap": "startcraft"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -23,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/Xcraft-Inc/xcraft-dev/issues"
   },
-  "homepage": "https://github.com/Xcraft-Inc/xcraft-dev#readme"
+  "homepage": "https://github.com/Xcraft-Inc/xcraft-dev#readme",
+  "workspaces": [
+    "lib/*"
+  ]
 }

@@ -1,210 +1,210 @@
 [submodule "xcraft-core-fs"]
-	path = xcraft-core-fs
+	path = lib/xcraft-core-fs
 	url = ../xcraft-core-fs.git
 [submodule "xcraft-core-ftp"]
-	path = xcraft-core-ftp
+	path = lib/xcraft-core-ftp
 	url = ../xcraft-core-ftp.git
 [submodule "xcraft-core-placeholder"]
-	path = xcraft-core-placeholder
+	path = lib/xcraft-core-placeholder
 	url = ../xcraft-core-placeholder.git
 [submodule "xcraft-core-platform"]
-	path = xcraft-core-platform
+	path = lib/xcraft-core-platform
 	url = ../xcraft-core-platform.git
 [submodule "xcraft-core-uri"]
-	path = xcraft-core-uri
+	path = lib/xcraft-core-uri
 	url = ../xcraft-core-uri.git
 [submodule "xcraft-core-log"]
-	path = xcraft-core-log
+	path = lib/xcraft-core-log
 	url = ../xcraft-core-log.git
 [submodule "xcraft-core-env"]
-	path = xcraft-core-env
+	path = lib/xcraft-core-env
 	url = ../xcraft-core-env.git
 [submodule "xcraft-core-process"]
-	path = xcraft-core-process
+	path = lib/xcraft-core-process
 	url = ../xcraft-core-process.git
 [submodule "xcraft-core-utils"]
-	path = xcraft-core-utils
+	path = lib/xcraft-core-utils
 	url = ../xcraft-core-utils.git
 [submodule "xcraft-core-wizard"]
-	path = xcraft-core-wizard
+	path = lib/xcraft-core-wizard
 	url = ../xcraft-core-wizard.git
 [submodule "xcraft-core-scm"]
-	path = xcraft-core-scm
+	path = lib/xcraft-core-scm
 	url = ../xcraft-core-scm.git
 [submodule "xcraft-core-subst"]
-	path = xcraft-core-subst
+	path = lib/xcraft-core-subst
 	url = ../xcraft-core-subst.git
 [submodule "xcraft-core-server"]
-	path = xcraft-core-server
+	path = lib/xcraft-core-server
 	url = ../xcraft-core-server.git
 [submodule "xcraft-core-daemon"]
-	path = xcraft-core-daemon
+	path = lib/xcraft-core-daemon
 	url = ../xcraft-core-daemon.git
 [submodule "xcraft-core-devel"]
-	path = xcraft-core-devel
+	path = lib/xcraft-core-devel
 	url = ../xcraft-core-devel.git
 [submodule "xcraft-core-buslog"]
-	path = xcraft-core-buslog
+	path = lib/xcraft-core-buslog
 	url = ../xcraft-core-buslog.git
 [submodule "xcraft-core-busclient"]
-	path = xcraft-core-busclient
+	path = lib/xcraft-core-busclient
 	url = ../xcraft-core-busclient.git
 [submodule "xcraft-core-bin"]
-	path = xcraft-core-bin
+	path = lib/xcraft-core-bin
 	url = ../xcraft-core-bin.git
 [submodule "xcraft-core-bus"]
-	path = xcraft-core-bus
+	path = lib/xcraft-core-bus
 	url = ../xcraft-core-bus.git
 [submodule "xcraft-core-activity"]
-	path = xcraft-core-activity
+	path = lib/xcraft-core-activity
 	url = ../xcraft-core-activity.git
 [submodule "xcraft-core-extract"]
-	path = xcraft-core-extract
+	path = lib/xcraft-core-extract
 	url = ../xcraft-core-extract.git
 [submodule "xcraft-core-eventstore"]
-	path = xcraft-core-eventstore
+	path = lib/xcraft-core-eventstore
 	url = ../xcraft-core-eventstore.git
 [submodule "xcraft-core-etc"]
-	path = xcraft-core-etc
+	path = lib/xcraft-core-etc
 	url = ../xcraft-core-etc.git
 [submodule "xcraft-core-goblin"]
-	path = xcraft-core-goblin
+	path = lib/xcraft-core-goblin
 	url = ../xcraft-core-goblin.git
 [submodule "xcraft-server"]
-	path = xcraft-server
+	path = lib/xcraft-server
 	url = ../xcraft-server.git
 [submodule "xcraft-materials"]
-	path = xcraft-materials
+	path = lib/xcraft-materials
 	url = ../xcraft-materials.git
 [submodule "xcraft-zog"]
-	path = xcraft-zog
+	path = lib/xcraft-zog
 	url = ../xcraft-zog.git
 [submodule "xcraft-dev-rules"]
-	path = xcraft-dev-rules
+	path = lib/xcraft-dev-rules
 	url = ../xcraft-dev-rules.git
 [submodule "xcraft-core-host"]
-	path = xcraft-core-host
+	path = lib/xcraft-core-host
 	url = ../xcraft-core-host.git
 [submodule "shellcraft"]
-	path = shellcraft
+	path = lib/shellcraft
 	url = ../shellcraft.js.git
 [submodule "xcraft-core-transport"]
-	path = xcraft-core-transport
+	path = lib/xcraft-core-transport
 	url = ../xcraft-core-transport.git
 [submodule "xcraft-core-shredder"]
-	path = xcraft-core-shredder
+	path = lib/xcraft-core-shredder
 	url = ../xcraft-core-shredder.git
 [submodule "startcraft"]
-	path = startcraft
+	path = lib/startcraft
 	url = ../startcraft.git
 [submodule "xcraft-core-http"]
-	path = xcraft-core-http
+	path = lib/xcraft-core-http
 	url = ../xcraft-core-http.git
 [submodule "xcraft-contrib-peon"]
-	path = xcraft-contrib-peon
+	path = lib/xcraft-contrib-peon
 	url = ../xcraft-contrib-peon.git
 [submodule "xcraft-contrib-pacman"]
-	path = xcraft-contrib-pacman
+	path = lib/xcraft-contrib-pacman
 	url = ../xcraft-contrib-pacman.git
 [submodule "xcraft-contrib-wpkg"]
-	path = xcraft-contrib-wpkg
+	path = lib/xcraft-contrib-wpkg
 	url = ../xcraft-contrib-wpkg.git
 [submodule "xcraft-contrib-bootwpkg"]
-	path = xcraft-contrib-bootwpkg
+	path = lib/xcraft-contrib-bootwpkg
 	url = ../xcraft-contrib-bootwpkg.git
 [submodule "xcraft-contrib-bootcmake"]
-	path = xcraft-contrib-bootcmake
+	path = lib/xcraft-contrib-bootcmake
 	url = ../xcraft-contrib-bootcmake.git
 [submodule "xcraft-core-horde"]
-	path = xcraft-core-horde
+	path = lib/xcraft-core-horde
 	url = ../xcraft-core-horde.git
 [submodule "axon"]
-	path = xcraft-axon
+	path = lib/xcraft-axon
 	url = ../axon.git
 [submodule "gigawatt"]
-	path = gigawatts
+	path = lib/gigawatts
 	url = ../gigawatts.git
 [submodule "xcraft-dev-prettier"]
-	path = xcraft-dev-prettier
+	path = lib/xcraft-dev-prettier
 	url = ../xcraft-dev-prettier
 [submodule "goblin-builder"]
-	path = goblin-builder
+	path = lib/goblin-builder
 	url = ../goblin-builder
 [submodule "goblin-gadgets"]
-	path = goblin-gadgets
+	path = lib/goblin-gadgets
 	url = ../goblin-gadgets
 [submodule "goblin-client"]
-	path = goblin-client
+	path = lib/goblin-client
 	url = ../goblin-client
 [submodule "goblin-webpack"]
-	path = goblin-webpack
+	path = lib/goblin-webpack
 	url = ../goblin-webpack
 [submodule "goblin-workshop"]
-	path = goblin-workshop
+	path = lib/goblin-workshop
 	url = ../goblin-workshop
 [submodule "goblin-nabu"]
-	path = goblin-nabu
+	path = lib/goblin-nabu
 	url = ../goblin-nabu
 [submodule "goblin-configurator"]
-	path = goblin-configurator
+	path = lib/goblin-configurator
 	url = ../goblin-configurator
 [submodule "goblin-zeppelin"]
-	path = goblin-zeppelin
+	path = lib/goblin-zeppelin
 	url = ../goblin-zeppelin
 [submodule "goblin-desktop"]
-	path = goblin-desktop
+	path = lib/goblin-desktop
 	url = ../goblin-desktop
 [submodule "goblin-elasticsearch"]
-	path = goblin-elasticsearch
+	path = lib/goblin-elasticsearch
 	url = ../goblin-elasticsearch
 [submodule "xcraft-dev-fontawesome"]
-	path = xcraft-dev-fontawesome
+	path = lib/xcraft-dev-fontawesome
 	url = ../xcraft-dev-fontawesome
 [submodule "goblin-overwatch"]
-	path = goblin-overwatch
+	path = lib/goblin-overwatch
 	url = ../goblin-overwatch
 [submodule "goblin-tradingpost"]
-	path = goblin-tradingpost
+	path = lib/goblin-tradingpost
 	url = ../goblin-tradingpost
 [submodule "goblin-theme"]
-	path = goblin-theme
+	path = lib/goblin-theme
 	url = ../goblin-theme
 [submodule "goblin-rethink"]
-	path = goblin-rethink
+	path = lib/goblin-rethink
 	url = ../goblin-rethink
 [submodule "goblin-laboratory"]
-	path = goblin-laboratory
+	path = lib/goblin-laboratory
 	url = ../goblin-laboratory
 [submodule "goblin-wm"]
-	path = goblin-wm
+	path = lib/goblin-wm
 	url = ../goblin-wm
 [submodule "goblin-warehouse"]
-	path = goblin-warehouse
+	path = lib/goblin-warehouse
 	url = ../goblin-warehouse
 [submodule "goblin-nabu-store"]
-	path = goblin-nabu-store
+	path = lib/goblin-nabu-store
 	url = ../goblin-nabu-store
 [submodule "goblin-blacksmith"]
-	path = goblin-blacksmith
+	path = lib/goblin-blacksmith
 	url = ../goblin-blacksmith
 [submodule "goblin-shaman"]
-	path = goblin-shaman
+	path = lib/goblin-shaman
 	url = ../goblin-shaman
 [submodule "goblin-garona"]
-	path = goblin-garona
+	path = lib/goblin-garona
 	url = ../goblin-garona
 [submodule "goblin-postman"]
-	path = goblin-postman
+	path = lib/goblin-postman
 	url = ../goblin-postman
 [submodule "goblin-desktop-web"]
-	path = goblin-desktop-web
+	path = lib/goblin-desktop-web
 	url = ../goblin-desktop-web
 [submodule "goblin-toolbox"]
-	path = goblin-toolbox
+	path = lib/goblin-toolbox
 	url = ../goblin-toolbox
 [submodule "goblin-etl"]
-	path = goblin-etl
+	path = lib/goblin-etl
 	url = ../goblin-etl
 [submodule "xcraft-core-stones"]
-	path = xcraft-core-stones
+	path = lib/xcraft-core-stones
 	url = ../xcraft-core-stones
