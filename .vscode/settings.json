@@ -1,0 +1,6 @@
+{
+  "javascript.preferences.importModuleSpecifierEnding": "js",
+  "testExplorer.useNativeTesting": true,
+  "mochaExplorer.files": "*/test/*.spec.js",
+  "mochaExplorer.exit": true
+}
