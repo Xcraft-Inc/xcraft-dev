@@ -205,3 +205,27 @@
 [submodule "xcraft-core-stones"]
 	path = lib/xcraft-core-stones
 	url = ../xcraft-core-stones
+[submodule "lib/xcraft-core-converters"]
+	path = lib/xcraft-core-converters
+	url = ../xcraft-core-converters
+[submodule "lib/xcraft-core-cryo"]
+	path = lib/xcraft-core-cryo
+	url = ../xcraft-core-cryo
+[submodule "lib/xcraft-core-book"]
+	path = lib/xcraft-core-book
+	url = ../xcraft-core-book
+[submodule "lib/xcraft-core-journal"]
+	path = lib/xcraft-core-journal
+	url = ../xcraft-core-journal
+[submodule "lib/xcraft-core-probe"]
+	path = lib/xcraft-core-probe
+	url = ../xcraft-core-probe
+[submodule "lib/xcraft-immutablediff"]
+	path = lib/xcraft-immutablediff
+	url = ../immutable-js-diff
+[submodule "lib/xcraft-immutablepatch"]
+	path = lib/xcraft-immutablepatch
+	url = ../immutable-js-patch
+[submodule "lib/xcraft-isomorphic-serialize"]
+	path = lib/xcraft-isomorphic-serialize
+	url = ../isomorphic
