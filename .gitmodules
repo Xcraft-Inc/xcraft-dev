@@ -226,6 +226,3 @@
 [submodule "lib/xcraft-immutablepatch"]
 	path = lib/xcraft-immutablepatch
 	url = ../immutable-js-patch
-[submodule "lib/xcraft-isomorphic-serialize"]
-	path = lib/xcraft-isomorphic-serialize
-	url = ../isomorphic
