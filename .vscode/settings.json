@@ -2,5 +2,6 @@
   "javascript.preferences.importModuleSpecifierEnding": "js",
   "testExplorer.useNativeTesting": true,
   "mochaExplorer.files": ["lib/*/test/*.spec.js", "lib/*/tests/*.test.js"],
-  "mochaExplorer.exit": true
+  "mochaExplorer.exit": true,
+  "mochaExplorer.env": { "GOBLIN_ENFORCER_LOOSE": "1" }
 }
