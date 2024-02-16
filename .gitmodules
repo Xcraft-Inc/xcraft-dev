@@ -226,3 +226,6 @@
 [submodule "lib/xcraft-immutablepatch"]
 	path = lib/xcraft-immutablepatch
 	url = ../immutable-js-patch
+[submodule "lib/xcraft-core-pickaxe"]
+	path = lib/xcraft-core-pickaxe
+	url = ../xcraft-core-pickaxe
