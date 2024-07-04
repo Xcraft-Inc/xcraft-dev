@@ -229,3 +229,9 @@
 [submodule "lib/xcraft-core-pickaxe"]
 	path = lib/xcraft-core-pickaxe
 	url = ../xcraft-core-pickaxe
+[submodule "lib/goblin-chest"]
+	path = lib/goblin-chest
+	url = ../goblin-chest
+[submodule "lib/goblin-chronomancer"]
+	path = lib/goblin-chronomancer
+	url = ../goblin-chronomancer
