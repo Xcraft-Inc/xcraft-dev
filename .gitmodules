@@ -235,3 +235,6 @@
 [submodule "lib/goblin-chronomancer"]
 	path = lib/goblin-chronomancer
 	url = ../goblin-chronomancer
+[submodule "lib/xcraft-traverse"]
+	path = lib/xcraft-traverse
+	url = ../xcraft-traverse
