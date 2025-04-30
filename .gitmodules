@@ -238,3 +238,6 @@
 [submodule "lib/xcraft-traverse"]
 	path = lib/xcraft-traverse
 	url = ../xcraft-traverse
+[submodule "lib/goblin-magic"]
+	path = lib/goblin-magic
+	url = ../goblin-magic
