@@ -22,5 +22,10 @@
   "homepage": "https://github.com/Xcraft-Inc/xcraft-dev#readme",
   "workspaces": [
     "lib/*"
-  ]
+  ],
+  "overrides": {
+    "react-splitter-layout": {
+      "react": "^17.0.1"
+    }
+  }
 }
