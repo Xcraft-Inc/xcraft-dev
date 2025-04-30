@@ -241,3 +241,15 @@
 [submodule "lib/goblin-magic"]
 	path = lib/goblin-magic
 	url = ../goblin-magic
+[submodule "lib/goblin-guilds"]
+	path = lib/goblin-guilds
+	url = ../goblin-guilds
+[submodule "lib/goblin-chronicle"]
+	path = lib/goblin-chronicle
+	url = ../goblin-chronicle
+[submodule "lib/goblin-repositor"]
+	path = lib/goblin-repositor
+	url = ../goblin-repositor
+[submodule "lib/goblin-blackrock"]
+	path = lib/goblin-blackrock
+	url = ../goblin-blackrock
