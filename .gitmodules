@@ -253,3 +253,6 @@
 [submodule "lib/goblin-blackrock"]
 	path = lib/goblin-blackrock
 	url = ../goblin-blackrock
+[submodule "lib/goblin-agents"]
+	path = lib/goblin-agents
+	url = ../goblin-agents
