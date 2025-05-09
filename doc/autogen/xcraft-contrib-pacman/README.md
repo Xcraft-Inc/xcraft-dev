@@ -61,25 +61,25 @@ zog pacman.build my-package
 zog pacman.install my-package
 
 # Installation avec une version spécifique
-zog pacman.install --packageRefs=my-package --version=1.0.0
+zog pacman.install my-package --version=1.0.0
 ```
 
 ### Publier un paquet
 
 ```bash
-zog pacman.publish --packageRefs=my-package --outputRepository=/path/to/repo
+zog pacman.publish my-package /path/to/repo
 ```
 
 ### Opération complète (make, build, install)
 
 ```bash
-zog pacman.full --packageRefs=my-package
+zog pacman.full my-package
 ```
 
 ### Vérifier les dépendances d'un paquet
 
 ```bash
-zog pacman.bom --packageRef=my-package
+zog pacman.bom my-package
 ```
 
 ## Interactions avec d'autres modules
@@ -107,8 +107,8 @@ Le module peut être configuré via le fichier `config.js` :
 - **wpkgTemp** : Répertoire temporaire pour WPKG
 - **stamps** : Emplacement pour les tampons de construction
 - **http.enabled** : Activer le serveur HTTP pour les dépôts WPKG
-- **http.port** : Port du serveur HTTP
-- **http.hostname** : Nom d'hôte du serveur HTTP
+- **http.port** : Port du serveur HTTP (par défaut: 12321)
+- **http.hostname** : Nom d'hôte du serveur HTTP (par défaut: 0.0.0.0)
 
 ## Détails des sources
 
@@ -196,6 +196,17 @@ Gère les répertoires d'administration WPKG. Fonctionnalités :
 - `delSource` : Suppression d'une source d'un répertoire d'administration
 - `registerHooks` : Enregistrement des hooks
 - `create` : Création d'un répertoire d'administration
+
+### `lib/make.js`
+
+Ce module est responsable de la génération des fichiers de contrôle et de la préparation des paquets pour WPKG. Fonctionnalités principales :
+
+- `package` : Génère la structure complète du paquet
+- `_copyTemplateFiles` : Copie et configure les fichiers de template
+- `_build` : Construit les ressources du paquet
+- `_wpkgBuild` : Construit le paquet avec WPKG
+- `_bumpIfNecessary` : Incrémente la version du paquet si nécessaire
+- `injectHash` et `_injectRef` : Gère les références et les hachages des sources
 
 ### `lib/wpkgHttp.js`
 
