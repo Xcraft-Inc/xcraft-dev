@@ -23,6 +23,10 @@
   "workspaces": [
     "lib/*"
   ],
+  "devDependencies": {
+    "xcraft-dev-prettier": "^2.0.0",
+    "xcraft-dev-rules": "^4.4.2"
+  },
   "overrides": {
     "react-splitter-layout": {
       "react": "^17.0.1"

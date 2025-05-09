@@ -1,0 +1,52 @@
+{
+  "name": "code-miner",
+  "description": "Code miner, dataset producer for finetuning LLM's",
+  "appCompany": "epsitec",
+  "appId": "code-miner",
+  "useRealms": false,
+  "debify": {
+    "dependencies": "iproute2"
+  },
+  "xcraft": {
+    "xcraft-core-host": {
+      "mainQuest": "appMiner.init"
+    },
+    "xcraft-core-server": {
+      "modules": ["goblin-miner"]
+    },
+    "xcraft-core-bus": {
+      "host": "127.0.0.1",
+      "commanderPort": 10005,
+      "notifierPort": 20005,
+      "timeout": 3600000,
+      "acceptIncoming": false
+    },
+    "xcraft-core-goblin": {
+      "enableCryo": true
+    },
+    "xcraft-core-cryo": {
+      "enableFTS": true,
+      "enableVEC": true
+    },
+    "goblin-miner": {
+      "generate": {
+        "doc": false,
+        "readme": true
+      },
+      "agent": {
+        "provider": "open-ai",
+        "model": "anthropic/claude-3.7-sonnet",
+        "host": "https://openrouter.ai/api/v1",
+        "authKey": ""
+      },
+      "inference": {
+        "temperature": 0.2,
+        "seed": 21121871
+      },
+      "modules": {
+        "doc": {},
+        "readme": ["xcraft-contrib-pacman"]
+      }
+    }
+  }
+}

@@ -256,3 +256,6 @@
 [submodule "lib/goblin-agents"]
 	path = lib/goblin-agents
 	url = ../goblin-agents
+[submodule "lib/goblin-miner"]
+	path = lib/goblin-miner
+	url = ../goblin-miner

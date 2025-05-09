@@ -3,5 +3,9 @@
   "testExplorer.useNativeTesting": true,
   "mochaExplorer.files": ["lib/*/test/*.spec.js", "lib/*/tests/*.test.js"],
   "mochaExplorer.exit": true,
-  "mochaExplorer.env": { "GOBLIN_ENFORCER_LOOSE": "1" }
+  "mochaExplorer.env": {
+    "GOBLIN_ENFORCER_LOOSE": "1",
+    "GOBLIN_RUNNER_SHUTDOWN": "no"
+  },
+  "typescript.tsdk": "node_modules/typescript/lib"
 }
