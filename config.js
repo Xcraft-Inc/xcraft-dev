@@ -1,10 +1,10 @@
-'use strict';
+"use strict";
 
-const path = require('path');
-const {modules} = require('xcraft-core-utils');
+const path = require("path");
+const { modules } = require("xcraft-core-utils");
 
-const [appId, variantId] = (process.env.GOBLINS_APP || 'yeti').split('@');
+const [appId, variantId] = (process.env.GOBLINS_APP || "test").split("@");
 
 module.exports = {
-  default: modules.extractForEtc(path.join(__dirname, 'app'), appId, variantId),
+  default: modules.extractForEtc(path.join(__dirname, "app"), appId, variantId),
 };

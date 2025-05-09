@@ -1,12 +1,9 @@
 {
   "name": "code-miner",
   "description": "Code miner, dataset producer for finetuning LLM's",
-  "appCompany": "epsitec",
+  "appCompany": "xcraft",
   "appId": "code-miner",
   "useRealms": false,
-  "debify": {
-    "dependencies": "iproute2"
-  },
   "xcraft": {
     "xcraft-core-host": {
       "mainQuest": "appMiner.init"
