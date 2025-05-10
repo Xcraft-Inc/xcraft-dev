@@ -141,7 +141,8 @@ static #indexCache = new MapLimit(20);
 ```
 
 Les méthodes principales incluent:
-- **_runWpkg/_run** - Exécution de commandes wpkg avec gestion des sorties
+
+- **\_runWpkg/\_run** - Exécution de commandes wpkg avec gestion des sorties
 - **build/buildSrc** - Construction de paquets
 - **install/remove** - Installation et suppression de paquets
 - **createIndex** - Création d'index de dépôts
@@ -149,24 +150,7 @@ Les méthodes principales incluent:
 
 ### `lib/mapLimit.js`
 
-Une classe utilitaire simple qui étend `Map` pour limiter le nombre d'entrées. Elle est utilisée pour implémenter des caches à taille limitée dans le module:
-
-```javascript
-class MapLimit extends Map {
-  constructor(max) {
-    super();
-    this._max = max;
-  }
-
-  set(key, value) {
-    while (this.size >= this._max) {
-      const it = this.entries();
-      this.delete(it.next().value[0]);
-    }
-    super.set(key, value);
-  }
-}
-```
+Une classe utilitaire simple qui étend `Map` pour limiter le nombre d'entrées. Elle est utilisée pour implémenter des caches à taille limitée dans le module.
 
 Cette classe supprime automatiquement les entrées les plus anciennes lorsque la limite est atteinte, ce qui permet d'éviter une consommation excessive de mémoire tout en maintenant les performances des opérations fréquentes.
 
@@ -196,24 +180,6 @@ Le module utilise `wpkg-debversion` pour comparer les versions de paquets selon 
 1. Déterminer quelle version est la plus récente
 2. Archiver automatiquement les anciennes versions
 3. Maintenir la version la plus récente dans le dépôt principal
-
-La méthode `maxVersion` implémente cette logique de comparaison:
-
-```javascript
-function* maxVersion(versions) {
-  let maxVersion = versions.shift();
-  if (!versions.length) {
-    return maxVersion;
-  }
-  for (const version of versions) {
-    const comp = yield debversion(version, maxVersion);
-    if (comp > 0) {
-      maxVersion = version;
-    }
-  }
-  return maxVersion;
-}
-```
 
 ### Génération de graphes de dépendances
 
