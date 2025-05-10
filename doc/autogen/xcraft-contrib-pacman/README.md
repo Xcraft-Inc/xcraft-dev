@@ -84,14 +84,14 @@ zog pacman.bom my-package
 
 ## Interactions avec d'autres modules
 
-- **xcraft-core-etc** : Pour la configuration
-- **xcraft-core-fs** : Pour les opérations sur le système de fichiers
-- **xcraft-core-platform** : Pour la détection de la plateforme
-- **xcraft-contrib-wpkg** : Pour les opérations WPKG sous-jacentes
-- **xcraft-contrib-peon** : Pour les opérations de construction
-- **xcraft-core-wizard** : Pour l'interface d'édition interactive
-- **xcraft-core-env** : Pour la gestion des environnements
-- **xcraft-core-placeholder** : Pour l'injection de variables dans les templates
+- **[xcraft-core-etc]** : Pour la configuration
+- **[xcraft-core-fs]** : Pour les opérations sur le système de fichiers
+- **[xcraft-core-platform]** : Pour la détection de la plateforme
+- **[xcraft-contrib-wpkg]** : Pour les opérations WPKG sous-jacentes
+- **[xcraft-contrib-peon]** : Pour les opérations de construction
+- **[xcraft-core-wizard]** : Pour l'interface d'édition interactive
+- **[xcraft-core-env]** : Pour la gestion des environnements
+- **[xcraft-core-placeholder]** : Pour l'injection de variables dans les templates
 
 ## Configuration avancée
 
@@ -251,3 +251,12 @@ Ce fichier définit l'assistant interactif pour la création et la modification 
 - Options de téléchargement vers le serveur chest
 
 _Mise à jour de la documentation_
+
+[xcraft-core-etc]: https://github.com/Xcraft-Inc/xcraft-core-etc
+[xcraft-core-fs]: https://github.com/Xcraft-Inc/xcraft-core-fs
+[xcraft-core-platform]: https://github.com/Xcraft-Inc/xcraft-core-platform
+[xcraft-contrib-wpkg]: https://github.com/Xcraft-Inc/xcraft-contrib-wpkg
+[xcraft-contrib-peon]: https://github.com/Xcraft-Inc/xcraft-contrib-peon
+[xcraft-core-wizard]: https://github.com/Xcraft-Inc/xcraft-core-wizard
+[xcraft-core-env]: https://github.com/Xcraft-Inc/xcraft-core-env
+[xcraft-core-placeholder]: https://github.com/Xcraft-Inc/xcraft-core-placeholder

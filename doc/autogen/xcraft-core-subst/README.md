@@ -79,9 +79,9 @@ function example() {
 
 ## Interactions avec d'autres modules
 
-- **xcraft-core-platform** : Utilisé pour détecter le système d'exploitation
-- **xcraft-core-process** : Utilisé pour exécuter des commandes système
-- **xcraft-core-etc** : Utilisé pour charger la configuration Xcraft
+- **[xcraft-core-platform]** : Utilisé pour détecter le système d'exploitation
+- **[xcraft-core-process]** : Utilisé pour exécuter des commandes système
+- **[xcraft-core-etc]** : Utilisé pour charger la configuration Xcraft
 - **gigawatts** (watt) : Utilisé pour la gestion asynchrone
 
 ## Détails des sources
@@ -127,3 +127,7 @@ Le module utilise la configuration Xcraft pour déterminer les emplacements des 
 - **tempDriveRoot** : Répertoire temporaire pour les lecteurs substitués
 
 Ces valeurs sont configurées dans le fichier de configuration Xcraft.
+
+[xcraft-core-platform]: https://github.com/Xcraft-Inc/xcraft-core-platform
+[xcraft-core-process]: https://github.com/Xcraft-Inc/xcraft-core-process
+[xcraft-core-etc]: https://github.com/Xcraft-Inc/xcraft-core-etc

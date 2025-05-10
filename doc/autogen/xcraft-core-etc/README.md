@@ -68,8 +68,8 @@ etc.saveRun('mon-module', {
 
 ## Interactions avec d'autres modules
 
-- **xcraft-core-fs** : Utilisé pour les opérations sur le système de fichiers
-- **xcraft-core-utils** : Utilisé pour la fusion des configurations
+- **[xcraft-core-fs]** : Utilisé pour les opérations sur le système de fichiers
+- **[xcraft-core-utils]** : Utilisé pour la fusion des configurations
 - **is-running** : Vérifie si un processus est en cours d'exécution
 - **fs-extra** : Opérations avancées sur le système de fichiers
 - **lodash/merge** : Fusion profonde d'objets
@@ -112,4 +112,7 @@ Ce fichier définit la configuration ESLint par défaut pour les projets Xcraft.
 
 Cette configuration est conçue pour être utilisée avec la nouvelle configuration flat d'ESLint et inclut les meilleures pratiques pour le développement JavaScript moderne.
 
-*Ce document est une mise à jour de la documentation précédente.*
+_Ce document est une mise à jour de la documentation précédente._
+
+[xcraft-core-fs]: https://github.com/Xcraft-Inc/xcraft-core-fs
+[xcraft-core-utils]: https://github.com/Xcraft-Inc/xcraft-core-utils
