@@ -31,5 +31,6 @@
     "react-splitter-layout": {
       "react": "^17.0.1"
     }
-  }
+  },
+  "prettier": "xcraft-dev-prettier"
 }
