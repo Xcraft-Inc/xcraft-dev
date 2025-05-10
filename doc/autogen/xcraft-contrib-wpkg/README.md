@@ -2,7 +2,7 @@
 
 ## Aperçu
 
-Le module `xcraft-contrib-wpkg` est une interface JavaScript pour le système de gestion de paquets WPKG (Windows Package Manager). Il fournit une API complète pour manipuler des paquets dérivés de Debian (.deb) dans l'écosystème Xcraft (attention, les paquets ne suivent pas à 100% le standard Debian malgré leur extension), permettant la création, l'installation, la mise à jour et la gestion de paquets logiciels.
+Le module `xcraft-contrib-wpkg` est une interface JavaScript pour le système de gestion de paquets WPKG (Windows Package Manager). Il fournit une API complète pour manipuler des paquets dérivés de Debian (.deb) dans l'écosystème Xcraft, permettant la création, l'installation, la mise à jour et la gestion de paquets logiciels. Bien que ces paquets utilisent l'extension .deb, ils ne suivent pas strictement le standard Debian.
 
 ## Structure du module
 
@@ -57,39 +57,33 @@ wpkg.install(
 
 ```javascript
 const wpkg = require('xcraft-contrib-wpkg')(resp);
-wpkg.isPublished(
+const isAvailable = yield wpkg.isPublished(
   'package-name',
   '1.0.0',
   'amd64',
   'distribution-name',
-  null,
-  (err, result) => {
-    if (result) {
-      console.log('Package is available');
-    } else {
-      console.log('Package is not available');
-    }
-  }
+  null
 );
+if (isAvailable) {
+  console.log('Package is available');
+} else {
+  console.log('Package is not available');
+}
 ```
 
 ### Installation d'une version spécifique depuis les archives
 
 ```javascript
 const wpkg = require('xcraft-contrib-wpkg')(resp);
-wpkg.installFromArchive(
+yield wpkg.installFromArchive(
   'package-name',
   'amd64',
   'distribution-name',
   '1.2.3',
   null,
-  false,
-  (err) => {
-    if (!err) {
-      console.log('Archived package version installed successfully');
-    }
-  }
+  false
 );
+console.log('Archived package version installed successfully');
 ```
 
 ## Interactions avec d'autres modules
@@ -126,7 +120,11 @@ Ce fichier contient la classe principale `Wpkg` qui fournit l'API de haut niveau
 - **moveArchive** - Déplacement d'une version archivée vers un autre emplacement
 - **getArchiveLatestVersion/listArchiveVersions** - Gestion des versions archivées
 
-La classe implémente également un système de cache pour optimiser les performances des opérations fréquentes comme `show`.
+La classe implémente également un système de cache pour optimiser les performances des opérations fréquentes comme `show`:
+
+```javascript
+static #showCache = new MapLimit(100);
+```
 
 ### `lib/bin.js`
 
@@ -222,11 +220,8 @@ function* maxVersion(versions) {
 Le module permet de générer des graphes de dépendances pour visualiser les relations entre les paquets:
 
 ```javascript
-wpkg.graph(['package1', 'package2'], 'amd64', 'distribution-name', (err) => {
-  if (!err) {
-    console.log('Dependency graph generated');
-  }
-});
+yield wpkg.graph(['package1', 'package2'], 'amd64', 'distribution-name');
+console.log('Dependency graph generated');
 ```
 
 _Cette documentation a été mise à jour automatiquement._
