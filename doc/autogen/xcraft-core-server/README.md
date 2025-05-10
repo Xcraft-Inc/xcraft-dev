@@ -61,14 +61,14 @@ server.start((err) => {
 
 Le module `xcraft-core-server` interagit avec plusieurs autres modules Xcraft:
 
-- [**xcraft-core-bus**][1] : Pour la communication entre les composants
-- [**xcraft-core-busclient**][2] : Pour établir des connexions client au bus
-- [**xcraft-core-log**][3] : Pour la journalisation
-- [**xcraft-core-etc**][4] : Pour charger les configurations
-- [**xcraft-core-fs**][5] : Pour les opérations sur le système de fichiers
-- [**xcraft-core-utils**][6] : Pour diverses fonctions utilitaires
-- [**xcraft-core-env**][7] : Pour la gestion de l'environnement de développement
-- [**xcraft-core-transport**][8] : Pour le transport des messages entre les composants
+- **[xcraft-core-bus]** : Pour la communication entre les composants
+- **[xcraft-core-busclient]** : Pour établir des connexions client au bus
+- **[xcraft-core-log]** : Pour la journalisation
+- **[xcraft-core-etc]** : Pour charger les configurations
+- **[xcraft-core-fs]** : Pour les opérations sur le système de fichiers
+- **[xcraft-core-utils]** : Pour diverses fonctions utilitaires
+- **[xcraft-core-env]** : Pour la gestion de l'environnement de développement
+- **[xcraft-core-transport]** : Pour le transport des messages entre les composants
 
 ## Configuration avancée
 
@@ -144,11 +144,11 @@ Le serveur utilise un mécanisme de heartbeat pour maintenir les connexions acti
 
 _Cette documentation a été mise à jour automatiquement._
 
-[1]: https://github.com/Xcraft-Inc/xcraft-core-bus
-[2]: https://github.com/Xcraft-Inc/xcraft-core-busclient
-[3]: https://github.com/Xcraft-Inc/xcraft-core-log
-[4]: https://github.com/Xcraft-Inc/xcraft-core-etc
-[5]: https://github.com/Xcraft-Inc/xcraft-core-fs
-[6]: https://github.com/Xcraft-Inc/xcraft-core-utils
-[7]: https://github.com/Xcraft-Inc/xcraft-core-env
-[8]: https://github.com/Xcraft-Inc/xcraft-core-transport
+[xcraft-core-bus]: https://github.com/Xcraft-Inc/xcraft-core-bus
+[xcraft-core-busclient]: https://github.com/Xcraft-Inc/xcraft-core-busclient
+[xcraft-core-log]: https://github.com/Xcraft-Inc/xcraft-core-log
+[xcraft-core-etc]: https://github.com/Xcraft-Inc/xcraft-core-etc
+[xcraft-core-fs]: https://github.com/Xcraft-Inc/xcraft-core-fs
+[xcraft-core-utils]: https://github.com/Xcraft-Inc/xcraft-core-utils
+[xcraft-core-env]: https://github.com/Xcraft-Inc/xcraft-core-env
+[xcraft-core-transport]: https://github.com/Xcraft-Inc/xcraft-core-transport
