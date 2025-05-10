@@ -15,6 +15,7 @@ Le module est organisé en plusieurs convertisseurs spécialisés, chacun dédi�
 - **Autres** : `color`, `reference`, `field-type-checker`
 
 Chaque convertisseur expose généralement les fonctions suivantes :
+
 - `check()` - Vérifie si une valeur est au format canonique valide
 - `getDisplayed()` - Convertit une valeur canonique en format d'affichage
 - `parseEdited()` - Analyse une valeur éditée et la convertit en format canonique
@@ -60,7 +61,7 @@ const PriceConverters = require('xcraft-core-converters/lib/price.js');
 
 // Convertir un prix canonique en format d'affichage
 PriceConverters.getDisplayed('1234.5'); // "1 234.50"
-PriceConverters.getDisplayed('1234567.89', "p-1M"); // "1.23 M"
+PriceConverters.getDisplayed('1234567.89', 'p-1M'); // "1.23 M"
 
 // Analyser un prix édité
 const result = PriceConverters.parseEdited("1'234.5");
@@ -139,7 +140,10 @@ Convertisseur pour les dates, avec de nombreuses fonctions de manipulation.
 // Exemple d'utilisation avancée
 const today = DateConverters.getNowCanonical();
 const endOfMonth = DateConverters.moveAtEndingOfMonth(today);
-const periodDesc = DateConverters.getPeriodDescription('2023-01-01', '2023-12-31'); // '2023'
+const periodDesc = DateConverters.getPeriodDescription(
+  '2023-01-01',
+  '2023-12-31'
+); // '2023'
 ```
 
 ### `datetime.js`
@@ -150,7 +154,10 @@ Convertisseur pour les dates et heures combinées.
 // Exemple d'utilisation
 const now = DateTimeConverters.getNowCanonical();
 const displayed = DateTimeConverters.getDisplayed(now); // ex: '15.01.2023 14:30'
-const delta = DateTimeConverters.getDisplayedDelta('2023-01-15T12:00:00.000Z', now); // ex: 'Il y a 2 heures'
+const delta = DateTimeConverters.getDisplayedDelta(
+  '2023-01-15T12:00:00.000Z',
+  now
+); // ex: 'Il y a 2 heures'
 ```
 
 ### `delay.js`
@@ -197,7 +204,7 @@ Convertisseur spécialisé pour les prix.
 ```javascript
 // Exemple d'utilisation avancée
 const sortable = PriceConverters.getSortable(1234.56); // '0000123456'
-const formatted = PriceConverters.getDisplayed(1234567.89, "p-1M"); // "1.23 M"
+const formatted = PriceConverters.getDisplayed(1234567.89, 'p-1M'); // "1.23 M"
 ```
 
 ### `time.js`
@@ -226,7 +233,7 @@ const quarterName = QuarterConverters.getDisplayed(2); // 'Q2'
 const yearWeek = YearWeekConverters.getDisplayed('2023-15', 'short'); // '15.23'
 ```
 
-*Cette documentation a été mise à jour automatiquement.*
+_Cette documentation a été mise à jour automatiquement._
 
 [goblin-laboratory]: https://github.com/Xcraft-Inc/goblin-laboratory
 [goblin-desktop]: https://github.com/Xcraft-Inc/goblin-desktop

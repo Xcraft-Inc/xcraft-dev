@@ -28,14 +28,14 @@ Le serveur peut être exécuté soit comme un démon (processus indépendant), s
 ### Démarrer le serveur comme un démon
 
 ```javascript
-const server = require("xcraft-core-server");
+const server = require('xcraft-core-server');
 const options = {
-  logs: "/path/to/logs",
+  logs: '/path/to/logs',
   response: (err) => {
     if (err) {
-      console.error("Erreur lors du démarrage du serveur:", err);
+      console.error('Erreur lors du démarrage du serveur:', err);
     } else {
-      console.log("Serveur démarré avec succès");
+      console.log('Serveur démarré avec succès');
     }
   },
 };
@@ -46,14 +46,14 @@ const daemon = server.runAsDaemon(options);
 ### Démarrer le serveur comme une bibliothèque
 
 ```javascript
-const server = require("xcraft-core-server").runAsLib();
+const server = require('xcraft-core-server').runAsLib();
 
 server.start((err) => {
   if (err) {
-    console.error("Erreur lors du démarrage du serveur:", err);
+    console.error('Erreur lors du démarrage du serveur:', err);
     return;
   }
-  console.log("Serveur démarré avec succès");
+  console.log('Serveur démarré avec succès');
 });
 ```
 

@@ -143,7 +143,7 @@ Ce fichier est le point d'entrée principal du module. Il définit toutes les co
 - `syncRepository` : Synchronise les dépôts d'archives
 - `graph` : Génère le graphe de dépendances pour un ou plusieurs paquets
 - `version` : Lit et teste la version d'un ou plusieurs paquets
-- `refrhash` : Actualise les entrées $hash des définitions
+- `refrhash` : Actualise les entrées \$hash des définitions
 - `gitMergeDefinitions` : Fusionne les définitions de paquets avec les versions appropriées
 
 ### `lib/def.js`
@@ -250,7 +250,7 @@ Ce fichier définit l'assistant interactif pour la création et la modification 
 - Variables d'environnement
 - Options de téléchargement vers le serveur chest
 
-_Mise à jour de la documentation_
+_Cette documentation a été mise à jour automatiquement._
 
 [xcraft-core-etc]: https://github.com/Xcraft-Inc/xcraft-core-etc
 [xcraft-core-fs]: https://github.com/Xcraft-Inc/xcraft-core-fs

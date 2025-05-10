@@ -39,12 +39,12 @@ const etc = require('xcraft-core-etc')('/chemin/vers/racine/projet');
 const config = [
   {
     name: 'database.host',
-    default: 'localhost'
+    default: 'localhost',
   },
   {
     name: 'database.port',
-    default: 5432
-  }
+    default: 5432,
+  },
 ];
 
 etc.createDefault(config, 'mon-module');
@@ -62,7 +62,7 @@ console.log(config.database.host); // 'localhost'
 ```javascript
 etc.saveRun('mon-module', {
   temporaryFlag: true,
-  sessionId: 'abc123'
+  sessionId: 'abc123',
 });
 ```
 
@@ -112,7 +112,7 @@ Ce fichier définit la configuration ESLint par défaut pour les projets Xcraft.
 
 Cette configuration est conçue pour être utilisée avec la nouvelle configuration flat d'ESLint et inclut les meilleures pratiques pour le développement JavaScript moderne.
 
-_Ce document est une mise à jour de la documentation précédente._
+_Cette documentation a été mise à jour automatiquement._
 
 [xcraft-core-fs]: https://github.com/Xcraft-Inc/xcraft-core-fs
 [xcraft-core-utils]: https://github.com/Xcraft-Inc/xcraft-core-utils

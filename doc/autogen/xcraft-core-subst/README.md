@@ -27,7 +27,7 @@ const {Subst} = require('xcraft-core-subst');
 async function example() {
   const subst = new Subst('/chemin/tres/long/vers/un/dossier', resp);
   const drive = await subst.mount();
-  
+
   try {
     // Utiliser le lecteur monté (ex: 'z:')
     // ...
@@ -45,7 +45,9 @@ const {wrap} = require('xcraft-core-subst');
 
 // Dans une fonction async/await
 async function example() {
-  const result = await wrap('/chemin/tres/long/vers/un/fichier.txt', resp, 
+  const result = await wrap(
+    '/chemin/tres/long/vers/un/fichier.txt',
+    resp,
     async (err, shortPath) => {
       if (err) {
         throw err;
@@ -64,7 +66,7 @@ const {wrapTmp} = require('xcraft-core-subst');
 
 function example() {
   const {dest, unwrap} = wrapTmp('/chemin/source', 'dossier-temp', resp);
-  
+
   try {
     // Utiliser les fichiers dans dest
     // ...
@@ -99,6 +101,7 @@ La classe utilise les commandes Windows `net use` et `subst` pour vérifier et e
 ### `lib/wrap.js`
 
 Ce fichier fournit une fonction utilitaire qui :
+
 1. Prend un chemin de fichier
 2. Monte le répertoire contenant ce fichier sur une lettre de lecteur
 3. Exécute une fonction de callback avec le nouveau chemin court
@@ -109,6 +112,7 @@ C'est une façon élégante d'utiliser temporairement un chemin substitué sans 
 ### `lib/wrap-tmp.js`
 
 Ce fichier fournit une fonction qui :
+
 1. Vérifie si la configuration Xcraft a des répertoires temporaires différents pour le système et pour les lecteurs
 2. Si c'est le cas, copie les fichiers du chemin source vers un emplacement temporaire avec un chemin plus court
 3. Retourne le nouveau chemin et une fonction pour nettoyer les fichiers temporaires
@@ -127,6 +131,8 @@ Le module utilise la configuration Xcraft pour déterminer les emplacements des 
 - **tempDriveRoot** : Répertoire temporaire pour les lecteurs substitués
 
 Ces valeurs sont configurées dans le fichier de configuration Xcraft.
+
+_Cette documentation a été mise à jour automatiquement._
 
 [xcraft-core-platform]: https://github.com/Xcraft-Inc/xcraft-core-platform
 [xcraft-core-process]: https://github.com/Xcraft-Inc/xcraft-core-process
