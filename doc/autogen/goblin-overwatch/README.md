@@ -30,50 +30,62 @@ Les erreurs sont ensuite formatées et envoyées aux canaux configurés (Discord
 ### Initialisation du service
 
 ```javascript
-// Initialiser le service avec un temps de debounce personnalisé (en ms)
-const overwatch = quest.getAPI('overwatch');
-await overwatch.init(60000); // Debounce de 60 secondes
+// Dans une méthode d'un acteur Elf
+async elfQuest() {
+  // Initialiser le service avec un temps de debounce personnalisé (en ms)
+  const overwatch = this.quest.getAPI('overwatch');
+  await overwatch.init(60000); // Debounce de 60 secondes
+}
 ```
 
 ### Signaler une exception
 
 ```javascript
-const overwatch = quest.getAPI('overwatch');
-try {
-  // Code qui peut générer une exception
-} catch (error) {
-  await overwatch.exception({
-    err: error.message,
-    id: 'unique-error-id', // Optionnel, un hash sera généré si non fourni
-    time: new Date().toISOString(),
-    _xcraftOverwatch: true, // Pour les erreurs internes à Xcraft
-    goblin: {
-      id: ['goblin-id'],
-      quest: ['quest-name'],
-      callerGoblin: ['caller-goblin-id'],
-      callerQuest: ['caller-quest-name'],
-    },
-  });
+// Dans une méthode d'un acteur Elf
+async elfQuest() {
+  const overwatch = this.quest.getAPI('overwatch');
+  try {
+    // Code qui peut générer une exception
+  } catch (error) {
+    await overwatch.exception({
+      err: error.message,
+      id: 'unique-error-id', // Optionnel, un hash sera généré si non fourni
+      time: new Date().toISOString(),
+      _xcraftOverwatch: true, // Pour les erreurs internes à Xcraft
+      goblin: {
+        id: ['goblin-id'],
+        quest: ['quest-name'],
+        callerGoblin: ['caller-goblin-id'],
+        callerQuest: ['caller-quest-name'],
+      },
+    });
+  }
 }
 ```
 
 ### Signaler un comportement suspect
 
 ```javascript
-const overwatch = quest.getAPI('overwatch');
-await overwatch.hazard({
-  err: 'Description du comportement suspect',
-  mod: ['module-name'],
-  time: new Date().toISOString(),
-});
+// Dans une méthode d'un acteur Elf
+async elfQuest() {
+  const overwatch = this.quest.getAPI('overwatch');
+  await overwatch.hazard({
+    err: 'Description du comportement suspect',
+    mod: ['module-name'],
+    time: new Date().toISOString(),
+  });
+}
 ```
 
 ### Récupérer toutes les erreurs manuellement
 
 ```javascript
-const overwatch = quest.getAPI('overwatch');
-const allErrors = await overwatch.getAllErrors();
-// Traiter les erreurs...
+// Dans une méthode d'un acteur Elf
+async elfQuest() {
+  const overwatch = this.quest.getAPI('overwatch');
+  const allErrors = await overwatch.getAllErrors();
+  // Traiter les erreurs...
+}
 ```
 
 ## Interactions avec d'autres modules
@@ -90,7 +102,7 @@ La configuration du module se fait via le fichier `config.js` et peut être modi
 
 - **mode** : Mode de fonctionnement (`debounce` ou `manual`)
 - **channels** : Liste des canaux disponibles pour les notifications (Discord, email)
-- **agent** : Nom de l'agent qui rapporte les erreurs (par défaut "ana")
+- **agent** : Nom de l'agent qui rapporte les erreurs (choix parmi une liste de personnages d'Overwatch, par défaut "ana")
 
 ## Détails des sources
 
@@ -110,16 +122,17 @@ Ce fichier définit le service principal qui gère la collecte et l'envoi des er
 
 ### `report.js`
 
-Cette classe est responsable de la génération des rapports d'erreurs formatés pour les différents backends. Elle extrait les informations pertinentes des erreurs et les présente de manière structurée.
+Cette classe est responsable de la génération des rapports d'erreurs formatés pour les différents backends. Elle extrait les informations pertinentes des erreurs et les présente de manière structurée avec des sections comme l'en-tête, le sujet, la date, l'erreur, la pile d'appels et le nombre d'occurrences.
 
 ### `backends/discord.js`
 
 Implémentation du backend Discord pour l'envoi de notifications. Il gère :
 
 - La conversion du format HTML vers Markdown
-- La gestion des limites de taille des messages Discord
+- La gestion des limites de taille des messages Discord (2000 caractères)
 - La gestion des erreurs et des limites de taux d'envoi
 - L'envoi de fichiers pour les messages trop longs
+- L'utilisation d'emojis et d'avatars personnalisés pour les notifications
 
 ### `backends/mail.js`
 
@@ -135,11 +148,11 @@ Définit les options de configuration disponibles pour le module :
 
 - Mode de fonctionnement
 - Canaux disponibles
-- Nom de l'agent
+- Nom de l'agent (avec une liste de personnages d'Overwatch comme choix)
 
 ### `eslint.config.js`
 
-Configuration ESLint pour le module, définissant les règles de style de code et les plugins utilisés.
+Configuration ESLint pour le module, définissant les règles de style de code et les plugins utilisés (js, react, jsdoc, babel, prettier).
 
 ### `overwatch.js`
 
