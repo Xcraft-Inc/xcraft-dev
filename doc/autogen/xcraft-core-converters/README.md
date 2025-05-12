@@ -2,14 +2,14 @@
 
 ## Aperçu
 
-Le module `xcraft-core-converters` est une bibliothèque complète de conversion de données pour l'écosystème Xcraft. Il fournit un ensemble de convertisseurs spécialisés permettant de transformer des valeurs entre leur format canonique (interne), leur format d'affichage (pour l'UI) et leur format d'édition (saisie utilisateur).
+Le module `xcraft-core-converters` est une bibliothèque complète de conversion de données pour l'écosystème Xcraft. Il fournit un ensemble de convertisseurs spécialisés permettant de transformer des valeurs entre leur format canonique (interne), leur format d'affichage (pour l'UI) et leur format d'édition (saisie utilisateur). Cette bibliothèque est essentielle pour assurer la cohérence des données à travers l'application.
 
 ## Structure du module
 
 Le module est organisé en plusieurs convertisseurs spécialisés, chacun dédié à un type de données spécifique :
 
 - **Types de base** : `bool`, `number`, `integer`, `double`, `percent`
-- **Dates et temps** : `date`, `time`, `datetime`, `delay`
+- **Dates et temps** : `date`, `time`, `datetime`, `delay`, `calendar`
 - **Mesures** : `price`, `weight`, `length`, `pixel`, `volume`
 - **Périodes** : `month`, `dow` (jour de la semaine), `quarter`, `semester`, `year-week`, `year-month`, `year-quarter`, `year-semester`
 - **Autres** : `color`, `reference`, `field-type-checker`
@@ -91,6 +91,22 @@ const darkRed = ColorConverters.changeColor('#FF0000', 0, 1, 0.5); // '#800000'
 const blended = ColorConverters.slide('#224466', '#446688', 0.5); // '#335577'
 ```
 
+### Utilisation du nouveau module calendar
+
+```javascript
+const CalendarConverters = require('xcraft-core-converters/lib/calendar.js');
+
+// Convertir une date en format planner
+const plannerDate = CalendarConverters.toPlannerDate('2023-01-15T12:00:00Z'); // '2023-01-15'
+
+// Convertir une date avec fuseau horaire
+const zonedDate = CalendarConverters.addTimezone('2023-01-15T12:00:00', 'Europe/Paris');
+console.log(zonedDate); // '2023-01-15T12:00:00[Europe/Paris]'
+
+// Obtenir la date actuelle avec fuseau horaire
+const now = CalendarConverters.nowZonedDateTimeISO();
+```
+
 ## Interactions avec d'autres modules
 
 Ce module est utilisé par de nombreux composants de l'écosystème Xcraft, notamment :
@@ -119,6 +135,18 @@ Convertisseur pour les valeurs booléennes.
 
 - `check(canonical)` : Vérifie si la valeur est un booléen
 - `getDisplayed(canonicalBool, format)` : Convertit un booléen en "Oui"/"Non" ou "True"/"False" selon le format
+
+### `calendar.js`
+
+Nouveau convertisseur pour la gestion avancée des dates avec fuseaux horaires.
+
+```javascript
+// Exemple d'utilisation
+const plainDate = CalendarConverters.plainDateISO(new Date()); // '2023-01-15'
+const plainTime = CalendarConverters.plainTimeISO(new Date()); // '14:30:45.123'
+const zonedDateTime = CalendarConverters.addTimezone('2023-01-15T14:30:00', 'Europe/Paris');
+// zonedDateTime = '2023-01-15T14:30:00[Europe/Paris]'
+```
 
 ### `color.js`
 
