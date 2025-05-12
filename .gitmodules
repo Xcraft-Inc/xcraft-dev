@@ -259,3 +259,6 @@
 [submodule "lib/goblin-miner"]
 	path = lib/goblin-miner
 	url = ../goblin-miner
+[submodule "lib/xcraft-guldan"]
+	path = lib/xcraft-guldan
+	url = ../xcraft-guldan
