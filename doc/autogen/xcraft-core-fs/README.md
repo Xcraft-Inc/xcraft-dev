@@ -4,6 +4,16 @@
 
 Le module `xcraft-core-fs` est une bibliothèque utilitaire qui étend les fonctionnalités du système de fichiers Node.js. Il fournit des méthodes simplifiées pour les opérations courantes sur les fichiers et répertoires, avec une gestion améliorée des erreurs et des fonctionnalités supplémentaires par rapport au module `fs` natif de Node.js.
 
+## Sommaire
+
+- [Aperçu](#aperçu)
+- [Structure du module](#structure-du-module)
+- [Fonctionnement global](#fonctionnement-global)
+- [Exemples d'utilisation](#exemples-dutilisation)
+- [Interactions avec d'autres modules](#interactions-avec-dautres-modules)
+- [Détails des sources](#détails-des-sources)
+- [Remarques importantes](#remarques-importantes)
+
 ## Structure du module
 
 Le module est organisé autour d'un ensemble de fonctions utilitaires qui encapsulent et étendent les fonctionnalités de `fs-extra` :
@@ -67,6 +77,15 @@ const checksum = xFs.shasum('/chemin/source');
 const jsChecksum = xFs.shasum('/chemin/source', /\.js$/);
 ```
 
+### Modification de contenu de fichiers
+
+```javascript
+const xFs = require('xcraft-core-fs');
+
+// Remplacer toutes les occurrences de 'foo' par 'bar' dans un fichier
+xFs.sed('/chemin/fichier.txt', /foo/g, 'bar');
+```
+
 ## Interactions avec d'autres modules
 
 Ce module est une bibliothèque de base dans l'écosystème Xcraft et est utilisé par de nombreux autres modules qui ont besoin d'interagir avec le système de fichiers. Il n'a pas de dépendances directes avec d'autres modules Xcraft, ce qui en fait un module fondamental et autonome.
@@ -105,21 +124,57 @@ Ce fichier contient toutes les fonctions utilitaires du module. Voici les princi
 - **batch.cp(cb, location)** : Copie des fichiers en utilisant une fonction de rappel pour déterminer les noms de destination.
 - **batch.mv(cb, location)** : Déplace des fichiers en utilisant une fonction de rappel pour déterminer les noms de destination.
 
-### `eslint.config.js`
+### Méthodes détaillées
 
-Ce fichier configure ESLint pour le projet, définissant les règles de style de code et les plugins utilisés pour le développement du module. Il utilise la nouvelle configuration plate d'ESLint avec des plugins pour React, JSDoc et Babel.
+**`mkdir(location)`** - Crée un répertoire et tous les répertoires parents nécessaires (équivalent à `mkdir -p`).
 
-### `package.json`
+**`cp(src, dest, regex)`** - Copie un fichier ou le contenu d'un répertoire.
+- Si `src` est un fichier, `dest` doit être un chemin de fichier
+- Si `src` est un répertoire, `dest` doit être un répertoire (son contenu sera copié)
+- Le paramètre `regex` permet de filtrer les fichiers/répertoires à copier
 
-Définit les métadonnées du module, ses dépendances et les scripts disponibles. Les principales dépendances sont :
+**`mv(src, dest, regex)`** - Déplace un fichier ou le contenu d'un répertoire.
+- Tente d'abord un déplacement rapide avec `rename`
+- Si cela échoue (par exemple, entre systèmes de fichiers différents), effectue une copie suivie d'une suppression
+- Le paramètre `regex` permet de filtrer les fichiers/répertoires à déplacer
 
-- **fs-extra** : Extension du module fs natif de Node.js avec des fonctionnalités supplémentaires.
-- **isbinaryfile** : Utilisé pour détecter si un fichier est binaire (pour la fonction `sed`).
+**`rm(location)`** - Supprime un fichier ou un répertoire récursivement.
+
+**`rmSymlinks(location)`** - Supprime uniquement les liens symboliques dans un répertoire, récursivement.
+
+**`rmFiles(location)`** - Supprime uniquement les fichiers dans un répertoire, récursivement.
+
+**`ls(location, regex)`** - Liste tous les éléments (fichiers et répertoires) dans un emplacement, avec filtrage optionnel.
+
+**`lsdir(location, regex)`** - Liste uniquement les répertoires dans un emplacement, avec filtrage optionnel.
+
+**`lsfile(location, regex)`** - Liste uniquement les fichiers dans un emplacement, avec filtrage optionnel.
+
+**`lsall(location, followSymlink, filter)`** - Liste récursivement tous les fichiers et répertoires.
+- `followSymlink` : si `true`, suit les liens symboliques
+- `filter` : fonction de filtrage personnalisée qui reçoit le nom de l'élément et ses statistiques
+
+**`canExecute(file)`** - Vérifie si un fichier est exécutable en examinant les bits de permission.
+
+**`newerFiles(location, regex, mtime)`** - Vérifie si des fichiers sont plus récents qu'une date donnée.
+- Retourne `true` dès qu'un fichier plus récent est trouvé
+- Utile pour détecter les modifications depuis une certaine date
+
+**`shasum(location, regex, sed, sha)`** - Calcule la somme de contrôle SHA-256 des fichiers.
+- `regex` : filtre les fichiers à inclure dans le calcul
+- `sed` : fonction pour modifier le contenu avant le calcul de la somme
+- `sha` : objet hash existant (pour les appels récursifs)
+
+**`sed(file, regex, newValue)`** - Remplace du texte dans un fichier.
+- Ne modifie que les fichiers texte (détecte automatiquement les fichiers binaires)
+- Retourne `true` si des modifications ont été effectuées, `false` sinon
 
 ## Remarques importantes
 
 1. La plupart des fonctions sont synchrones, ce qui peut bloquer le thread principal si elles sont utilisées sur de grandes quantités de données.
 2. Les fonctions de copie et de déplacement créent automatiquement les répertoires intermédiaires si nécessaire.
 3. Le module expose directement l'instance `fse` (fs-extra) pour un accès aux fonctionnalités non couvertes par les méthodes personnalisées.
+4. Les opérations par lot (`batch.cp` et `batch.mv`) permettent de traiter plusieurs fichiers avec une logique personnalisée via une fonction de rappel.
+5. La fonction `shasum` est particulièrement utile pour vérifier l'intégrité d'un ensemble de fichiers ou détecter des modifications.
 
 *Ce document est une mise à jour de la documentation précédente.*
