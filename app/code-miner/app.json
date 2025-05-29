@@ -26,10 +26,6 @@
       "enableVEC": true
     },
     "goblin-miner": {
-      "generate": {
-        "doc": false,
-        "readme": true
-      },
       "agent": {
         "provider": "open-ai",
         "model": "anthropic/claude-3.7-sonnet",
@@ -41,8 +37,10 @@
         "seed": 21121871
       },
       "modules": {
-        "doc": {},
-        "readme": ["xcraft-contrib-pacman"]
+        "doc": ["goblin-workshop"]
+      },
+      "instruct": {
+        "doc": "README.md"
       }
     }
   }
