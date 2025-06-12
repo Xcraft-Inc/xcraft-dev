@@ -28,7 +28,7 @@
     "goblin-miner": {
       "agent": {
         "provider": "open-ai",
-        "model": "anthropic/claude-3.7-sonnet",
+        "model": "anthropic/claude-sonnet-4",
         "host": "https://openrouter.ai/api/v1",
         "authKey": ""
       },
@@ -37,10 +37,10 @@
         "seed": 21121871
       },
       "modules": {
-        "doc": ["goblin-workshop"]
+        "doc": ["xcraft-core-etc"]
       },
-      "instruct": {
-        "doc": "README.md"
+      "instructs": {
+        "doc": ["README.md"]
       }
     }
   }
