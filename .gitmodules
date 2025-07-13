@@ -265,3 +265,15 @@
 [submodule "lib/xcraft-reflux"]
 	path = lib/xcraft-reflux
 	url = ../xcraft-reflux
+[submodule "lib/goblin-zou"]
+	path = lib/goblin-zou
+	url = ../goblin-zou
+[submodule "lib/xcraft-contrib-bootstrap"]
+	path = lib/xcraft-contrib-bootstrap
+	url = ../xcraft-contrib-bootstrap
+[submodule "lib/goblins"]
+	path = lib/goblins
+	url = ../goblins
+[submodule "lib/xcraft-dev-sqlite"]
+	path = lib/xcraft-dev-sqlite
+	url = ../xcraft-dev-sqlite
