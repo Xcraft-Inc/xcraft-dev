@@ -277,3 +277,12 @@
 [submodule "lib/xcraft-dev-sqlite"]
 	path = lib/xcraft-dev-sqlite
 	url = ../xcraft-dev-sqlite
+[submodule "lib/xcraft-contrib-portal"]
+	path = lib/xcraft-contrib-portal
+	url = ../xcraft-contrib-portal
+[submodule "lib/xcraft-contrib-chest"]
+	path = lib/xcraft-contrib-chest
+	url = ../xcraft-contrib-chest
+[submodule "packages"]
+	path = packages
+	url = ../packages
