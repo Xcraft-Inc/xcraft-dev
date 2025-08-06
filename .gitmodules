@@ -286,3 +286,12 @@
 [submodule "packages"]
 	path = packages
 	url = ../packages
+[submodule "usr/windev"]
+	path = usr/windev
+	url = ../windev
+[submodule "usr/nixdev"]
+	path = usr/nixdev
+	url = ../nixdev
+[submodule "usr/xcraft"]
+	path = usr/xcraft
+	url = ../xcraft
