@@ -284,7 +284,7 @@
 	path = lib/xcraft-contrib-chest
 	url = ../xcraft-contrib-chest
 [submodule "packages"]
-	path = packages
+	path = usr/packages
 	url = ../packages
 [submodule "usr/windev"]
 	path = usr/windev
